@@ -25,8 +25,24 @@ using MB_Security;
 - **Encryption**
 - To encrypt data use **Encrypt** static function inside **Security** class.
 - **Security.Encrypt(Key,Plain_Data)** return a **Encryyption_Model** result.
-- Parameters : 
+-
+- **Parameters** : 
+-
 - **Key** is the private key for encryption operation.
 - **Key** should be in string type.
 - **Plain_Data** is the data that you want to encrypt.
 - **Plain_Data** (At this time) Should be a string type.
+
+```
+string Original_Data = "My name is MBARK";
+Encryption_Model em = Security.Encrypt("MyPrvKey", Original_Data);
+```
+- Now we **Encrypt** **Original_Data** value, and to get the encrypted data :
+```
+em.Encrypted_Text
+```
+
+- If you want to get the **Key** used after the encryption operation :
+```
+em.Key
+```
