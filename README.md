@@ -86,4 +86,4 @@ dm.Key
 # Additional info
 # -----------------------------------------------------------------
 
-- **Encryption_Model** and **Decryption_Model** two classes used as a data **models**
+- **Encryption_Model** and **Decryption_Model** two classes used as data **models**
