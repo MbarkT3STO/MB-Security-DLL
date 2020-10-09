@@ -24,7 +24,7 @@ using MB_Security;
 # -----------------------------------------------------------------
 - **Encryption**
 - To encrypt data use **Encrypt** static function inside **Security** class.
-- **Security.Encrypt(Key,Plain_Data)** return a **Encryyption_Model** result.
+- **Security.Encrypt( Key , Plain_Data )** return a **Encryyption_Model** result.
 -
 - **Parameters** : 
 -
@@ -49,7 +49,7 @@ em.Key
 
 - **Decryption**
 - To decrypt data use **Decrypt** static function inside **Security** class.
-- **Security.Decrypt(Key,Encrypted_Data)** return a **Decryyption_Model** result.
+- **Security.Decrypt( Key , Encrypted_Data )** return a **Decryption_Model** result.
 -
 - **Parameters** : 
 -
@@ -83,3 +83,7 @@ dm.Decrypted_Text
 dm.Key
 ```
 
+# Additional info
+# -----------------------------------------------------------------
+
+- **Encryption_Model** and **Decryption_Model** two classes used as a data **models**
