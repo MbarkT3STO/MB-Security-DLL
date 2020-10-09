@@ -29,7 +29,7 @@ using MB_Security;
 - **Parameters** : 
 -
 - **Key** is the private || RGB key for encryption operation.
-- **Key** should be in string type.
+- **Key** should be in string type, and **contains 8 Chars**.
 - **Plain_Data** is the data that you want to encrypt.
 - **Plain_Data** (At this time) Should be a string type.
 - **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
@@ -56,7 +56,7 @@ em.Key
 - **Parameters** : 
 -
 - **Key** is the private || RGB key for decryption operation.
-- **Key** should be in string type.
+- **Key** should be in string type, and **contains 8 Chars**.
 - **Encrypted_Data** is the data that you want to decrypt (should be encrypted already).
 - **Encrypted_Data** (At this time) Should be in string type.
 - **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
