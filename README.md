@@ -20,4 +20,13 @@ using MB_Security;
 
 - At this time this Library covering (Encrypt) just **String** data
 
-
+# Examples
+# -----------------------------------------------------------------
+- **Encryption**
+To encrypt data use **Encrypt** static function inside **Security** class.
+**Security.Encrypt(Key,Plain_Data)** return a **Encryyption_Model** result.
+Parameters : 
+**Key** is the private key for encryption operation.
+**Key** should be in string type.
+**Plain_Data** is the data that you want to encrypt.
+**Plain_Data** (At this time) Should be a string type.
