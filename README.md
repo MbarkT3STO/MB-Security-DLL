@@ -28,7 +28,7 @@ using MB_Security;
 -
 - **Parameters** : 
 -
-- **Key** is the private key for encryption operation.
+- **Key** is the private || RGB key for encryption operation.
 - **Key** should be in string type.
 - **Plain_Data** is the data that you want to encrypt.
 - **Plain_Data** (At this time) Should be a string type.
@@ -55,7 +55,7 @@ em.Key
 -
 - **Parameters** : 
 -
-- **Key** is the private key for decryption operation.
+- **Key** is the private || RGB key for decryption operation.
 - **Key** should be in string type.
 - **Encrypted_Data** is the data that you want to decrypt (should be encrypted already).
 - **Encrypted_Data** (At this time) Should be in string type.
