@@ -38,7 +38,7 @@ using MB_Security;
 
 ```
 string Original_Data = "My name is MBARK";
-Encryption_Model em = Security.Encrypt(Original_Data , "MyPrvKey");
+Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
 ```
 - Now we **Encrypt** **Original_Data** value, and to get the encrypted data :
 ```
@@ -65,14 +65,14 @@ em.Key
 
 ```
 string Encrypted_Data = "mUVKmyTM/vTYNs35G1LkB7hrKzzno19h";
-Decryption_Model dm = Security.Decrypt("MyPrvKey", Encrypted_Data);
+Decryption_Model dm = Security.Decrypt( Encrypted_Data , "MyPrvKey" );
 ```
 
 - **Other Example for Decryption**
 ```
 string Original_Data = "My name is MBARK";
 
-Encryption_Model em = Security.Encrypt("MyPrvKey", Original_Data);
+Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
 
 Decryption_Model dm = Security.Decrypt(em.Key, em.Encrypted_Text);
 
