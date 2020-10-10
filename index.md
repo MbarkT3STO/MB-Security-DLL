@@ -68,7 +68,7 @@ Encryption_Model em = Security.Encrypt( Original_Data );
 - To decrypt data use **Decrypt** static function inside **Security** class.
 ### **Security.Decrypt( Encrypted_Data , Key , IV )** return a **Decryption_Model** result.
 
-**Parameters** : 
+### **Parameters** : 
 
  - **Encrypted_Data** is the data that you want to decrypt (should be encrypted already).
  - **Encrypted_Data** (At this time) Should be in string type.
