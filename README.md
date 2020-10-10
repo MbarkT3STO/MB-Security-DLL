@@ -20,7 +20,7 @@ using MB_Security;
 
 - At this time this Library covering (Encrypt) just **String** data
 
-#
+
 # **Encryption examples**
 #
 - To encrypt data use **Encrypt** static function inside **Security** class.
@@ -59,7 +59,7 @@ Encryption_Model em = Security.Encrypt( Original_Data );
 ```
 - In the example above the **Key will Auo Generated**
 
-#
+
 # **Decryption examples**
 #
 - To decrypt data use **Decrypt** static function inside **Security** class.
