@@ -53,12 +53,14 @@ em.Key
 ```
 
 - **Other Example for Encryption**
+
 ```
 string Original_Data = "My name is MBARK";
 
 Encryption_Model em = Security.Encrypt( Original_Data );
 
 ```
+
 - In the example above the **Key will Auo Generated**
 
 
