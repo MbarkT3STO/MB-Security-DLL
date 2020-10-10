@@ -64,15 +64,15 @@ em.Key
 - **IV** By default IV used is **0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F**
 
 ```
-string Encrypted_Data = "mUVKmyTM/vTYNs35G1LkB7hrKzzno19h";
-Decryption_Model dm = Security.Decrypt( Encrypted_Data , "MyPrvKey" );
+string Encrypted_Data = "mUVKmyTM/vTYNs35G1LkB7hrKzzno19h==";
+Decryption_Model dm = Security.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k==" );
 ```
 
 - **Other Example for Decryption**
 ```
 string Original_Data = "My name is MBARK";
 
-Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
+Encryption_Model em = Security.Encrypt( Original_Data , "NB7hrK5G1LzvTYzno7hs3k==" );
 
 Decryption_Model dm = Security.Decrypt(em.Key, em.Encrypted_Text);
 
