@@ -107,6 +107,3 @@ dm.Key
 
 
 - **Encryption_Model** and **Decryption_Model** two classes used as data **models**
-
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
