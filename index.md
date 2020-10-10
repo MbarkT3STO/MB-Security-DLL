@@ -18,9 +18,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 - First thing you should do is inside your **.cs** || **Class** code use the **Name Space** :  
 
-```
-using MB_Security;
-```
+
+`using MB_Security;`
+
 
 - At this time this Library covering (Encrypt) just **String** data
 
@@ -40,27 +40,26 @@ using MB_Security;
 - **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
 - **IV** By default IV used is **0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F**
 
-```
+`
 string Original_Data = "My name is MBARK";
 Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
-```
+`
 - Now we **Encrypt** **Original_Data** value, and to get the encrypted data :
-```
+`
 em.Encrypted_Text
-```
+`
 
 - If you want to get the **Key** used after the encryption operation (Key in encrypted state) :
-```
+`
 em.Key
-```
+`
 
 - **Other Example for Encryption**
-```
+`
 string Original_Data = "My name is MBARK";
 
 Encryption_Model em = Security.Encrypt( Original_Data );
-
-```
+`
 - In the example above the **Key will Auo Generated**
 
 
@@ -78,31 +77,30 @@ Encryption_Model em = Security.Encrypt( Original_Data );
 - **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
 - **IV** By default IV used is **0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F**
 
-```
+`
 string Encrypted_Data = "mUVKmyTM/vTYNs35G1LkB7hrKzzno19h==";
 Decryption_Model dm = Security.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k==" );
                                                            Key in encryption state
-```
+`
 
 - **Other Example for Decryption**
-```
+`
 string Original_Data = "My name is MBARK";
 
 Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
 
 Decryption_Model dm = Security.Decrypt( em.Encrypted_Text , em.Key );
-
-```
+`
 
 - Now we **Decrypt** data, and to get the decrypted data :
-```
+`
 dm.Decrypted_Text
-```
+`
 
 - If you want to get the **Key** used after the decryption operation :
-```
+`
 dm.Key
-```
+`
 
 # Additional info
 
