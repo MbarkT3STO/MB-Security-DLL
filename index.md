@@ -32,9 +32,11 @@ using MB_Security;
 -
 - **Plain_Data** is the data that you want to encrypt.
 - **Plain_Data** (At this time) Should be a string type.
+
 - **Key** [ Optional parameter ] is the private or RGB key for encryption operation.
 - **Key** should be in string type, and **contains 8 Chars**.
 - **Key** If you don't pass it, a Key will **Auto Generated**.
+
 - **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
 - **IV** By default IV used is **0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F**
 
@@ -72,8 +74,10 @@ Encryption_Model em = Security.Encrypt( Original_Data );
 
  - **Encrypted_Data** is the data that you want to decrypt (should be encrypted already).
  - **Encrypted_Data** (At this time) Should be in string type.
+ 
  - **Key** Is the private or RGB key for decryption operation.
  - **Key** should be in string type, **contains 8 Chars**, and **should be the Encrypted key you got after the Encryption operation**.
+ 
  - **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
  - **IV** By default IV used is **0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F**
 
