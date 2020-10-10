@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MB Security</name>
+    </assembly>
+    <members>
+        <member name="T:MB_Security.Security">
+            <summary>
+            Created by MBARK T3STO, to helping you Encrypt and Decrypt data with easiest way
+            </summary>
+        </member>
+        <member name="F:MB_Security.Security.Default_IV">
+            <summary>
+            Default Used IV
+            </summary>
+        </member>
+        <member name="F:MB_Security.Security.Default_Key_4_Enc_Dec_Keys">
+            <summary>
+            Default key will used to Encrypt || Decrypt Keys (AES algorithm need 32 Hex values in key in this case (IV Values count * 2))
+            </summary>
+        </member>
+        <member name="F:MB_Security.Security.Generate_Key">
+            <summary>
+            Generate a new random Private Key
+            </summary>
+        </member>
+        <member name="F:MB_Security.Security.Encrypt_Key">
+            <summary>
+            Encrypt the Generated Key
+            </summary>
+        </member>
+        <member name="F:MB_Security.Security.Decrypt_Key">
+            <summary>
+            Encrypt the generated Key
+            </summary>
+        </member>
+        <member name="M:MB_Security.Security.Encrypt(System.String,System.String,System.Byte[])">
+            <summary>
+            Encrypt data
+            </summary>
+            <param name="Plain_Data">Data you want to encrypt</param>
+            /// <param name="Key">The private || RGB key</param>
+            <param name="IV">Initialization vector to use</param>
+            <returns>Encrypted data or Null</returns>
+        </member>
+        <member name="M:MB_Security.Security.Decrypt(System.String,System.String,System.Byte[])">
+            <summary>
+            Decrypt encrypted data
+            </summary>
+            <param name="Encrypted_Data">Data you want to decrypt</param>
+            <param name="Key">The private || RGB key</param>
+            <param name="IV">Initialization vector to use</param>
+            <returns>Decrypted data or Null</returns>
+        </member>
+    </members>
+</doc>
