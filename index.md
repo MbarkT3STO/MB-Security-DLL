@@ -2,7 +2,7 @@
 
 You can use the [editor on GitHub](https://github.com/MbarkT3STO/MB-Security-DLL/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-# 1st Step (Add reference)
+## 1st Step (Add reference)
 
 - **1 -** Open your .NET project using visual studio.
 - **2 -** Go to Solution Explorer
@@ -12,18 +12,18 @@ You can use the [editor on GitHub](https://github.com/MbarkT3STO/MB-Security-DLL
 - **6 -** Select all downloaded DLLs
 - **7 -** Click on OK
 
-# 2nd Step (Using)
+## 2nd Step (Using)
 
-- First thing you should do is inside your **.cs** || **Class** code use the **Name Space** :  
+- First thing you should do is inside your **.cs** or **Class** code use the **Name Space** :  
 
-
-`using MB_Security;`
-
+```
+using MB_Security;
+```
 
 - At this time this Library covering (Encrypt) just **String** data
 
 
-# **Encryption examples**
+## **Encryption examples**
 
 - To encrypt data use **Encrypt** static function inside **Security** class.
 - **Security.Encrypt( Plain_Data , Key )** return a **Encryyption_Model** result.
@@ -32,36 +32,37 @@ You can use the [editor on GitHub](https://github.com/MbarkT3STO/MB-Security-DLL
 -
 - **Plain_Data** is the data that you want to encrypt.
 - **Plain_Data** (At this time) Should be a string type.
-- **Key** [ Optional parameter ] is the private || RGB key for encryption operation.
+- **Key** [ Optional parameter ] is the private or RGB key for encryption operation.
 - **Key** should be in string type, and **contains 8 Chars**.
 - **Key** If you don't pass it, a Key will **Auto Generated**.
 - **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
 - **IV** By default IV used is **0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F**
 
-`
+```
 string Original_Data = "My name is MBARK";
 Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
-`
+```
 - Now we **Encrypt** **Original_Data** value, and to get the encrypted data :
-`
+```
 em.Encrypted_Text
-`
+```
 
 - If you want to get the **Key** used after the encryption operation (Key in encrypted state) :
-`
+```
 em.Key
-`
+```
 
 - **Other Example for Encryption**
-`
+```
 string Original_Data = "My name is MBARK";
 
 Encryption_Model em = Security.Encrypt( Original_Data );
-`
+
+```
 - In the example above the **Key will Auo Generated**
 
 
-# **Decryption examples**
+## **Decryption examples**
 
 - To decrypt data use **Decrypt** static function inside **Security** class.
 - **Security.Decrypt( Encrypted_Data , Key )** return a **Decryption_Model** result.
@@ -75,36 +76,36 @@ Encryption_Model em = Security.Encrypt( Original_Data );
 - **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
 - **IV** By default IV used is **0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F**
 
-`
+```
 string Encrypted_Data = "mUVKmyTM/vTYNs35G1LkB7hrKzzno19h==";
 Decryption_Model dm = Security.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k==" );
                                                            Key in encryption state
-`
+```
 
 - **Other Example for Decryption**
-`
+```
 string Original_Data = "My name is MBARK";
 
 Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
 
 Decryption_Model dm = Security.Decrypt( em.Encrypted_Text , em.Key );
-`
+
+```
 
 - Now we **Decrypt** data, and to get the decrypted data :
-`
+```
 dm.Decrypted_Text
-`
+```
 
 - If you want to get the **Key** used after the decryption operation :
-`
+```
 dm.Key
-`
+```
 
-# Additional info
+## Additional info
 
 
 - **Encryption_Model** and **Decryption_Model** two classes used as data **models**
-
 
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
