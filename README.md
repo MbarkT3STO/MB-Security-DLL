@@ -1,7 +1,7 @@
 # MB-Security-DLL
 A DLL library for ( .NET ) help you to Encrypt &amp; Decrypt data
 # 1st Step (Add reference)
-# -----------------------------------------------------------------
+
 - **1 -** Open your .NET project using visual studio.
 - **2 -** Go to Solution Explorer
 - **3 -** Right click on References
@@ -11,7 +11,7 @@ A DLL library for ( .NET ) help you to Encrypt &amp; Decrypt data
 - **7 -** Click on OK
 
 # 2nd Step (Using)
-# -----------------------------------------------------------------
+
 - First thing you should do is inside your **.cs** || **Class** code use the **Name Space** :  
 
 ```
@@ -22,7 +22,7 @@ using MB_Security;
 
 #
 # Examples
-# -----------------------------------------------------------------
+# ---------------
 #
 # **Encryption**
 #
