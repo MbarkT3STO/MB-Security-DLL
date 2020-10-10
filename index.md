@@ -1,6 +1,4 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/MbarkT3STO/MB-Security-DLL/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# MB Security Library Guide
 
 ## 1st Step (Add reference)
 
