@@ -83,7 +83,7 @@ Decryption_Model dm = Security.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k
                                                            Key in encryption state
 ```
 
-- **Other Example for Decryption**
+-**Other Example for Decryption**
 ```
 string Original_Data = "My name is MBARK";
 
