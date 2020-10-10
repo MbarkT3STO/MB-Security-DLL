@@ -1,4 +1,4 @@
-## Welcome to GitHub Pagesxxx
+## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/MbarkT3STO/MB-Security-DLL/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -6,32 +6,109 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 # 1st Step (Add reference)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- **1 -** Open your .NET project using visual studio.
+- **2 -** Go to Solution Explorer
+- **3 -** Right click on References
+- **4 -** Chose Add Reference
+- **5 -** Click on Browse
+- **6 -** Select all downloaded DLLs
+- **7 -** Click on OK
 
-```markdown
-Syntax highlighted code block
+# 2nd Step (Using)
 
-# Header 1
-## Header 2
-### Header 3
+- First thing you should do is inside your **.cs** || **Class** code use the **Name Space** :  
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+using MB_Security;
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- At this time this Library covering (Encrypt) just **String** data
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MbarkT3STO/MB-Security-DLL/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# **Encryption examples**
 
-### Support or Contact
+- To encrypt data use **Encrypt** static function inside **Security** class.
+- **Security.Encrypt( Plain_Data , Key )** return a **Encryyption_Model** result.
+-
+- **Parameters** : 
+-
+- **Plain_Data** is the data that you want to encrypt.
+- **Plain_Data** (At this time) Should be a string type.
+- **Key** [ Optional parameter ] is the private || RGB key for encryption operation.
+- **Key** should be in string type, and **contains 8 Chars**.
+- **Key** If you don't pass it, a Key will **Auto Generated**.
+- **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
+- **IV** By default IV used is **0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F**
+
+```
+string Original_Data = "My name is MBARK";
+Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
+```
+- Now we **Encrypt** **Original_Data** value, and to get the encrypted data :
+```
+em.Encrypted_Text
+```
+
+- If you want to get the **Key** used after the encryption operation (Key in encrypted state) :
+```
+em.Key
+```
+
+- **Other Example for Encryption**
+```
+string Original_Data = "My name is MBARK";
+
+Encryption_Model em = Security.Encrypt( Original_Data );
+
+```
+- In the example above the **Key will Auo Generated**
+
+
+# **Decryption examples**
+
+- To decrypt data use **Decrypt** static function inside **Security** class.
+- **Security.Decrypt( Encrypted_Data , Key )** return a **Decryption_Model** result.
+-
+- **Parameters** : 
+-
+- **Encrypted_Data** is the data that you want to decrypt (should be encrypted already).
+- **Encrypted_Data** (At this time) Should be in string type.
+- **Key** Is the private || RGB key for decryption operation.
+- **Key** should be in string type, **contains 8 Chars**, and **should be the Encrypted key you got after the Encryption operation**.
+- **IV** [ Optional parameter ] The Initialization vector to use, and **Should be a byte array**.
+- **IV** By default IV used is **0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F**
+
+```
+string Encrypted_Data = "mUVKmyTM/vTYNs35G1LkB7hrKzzno19h==";
+Decryption_Model dm = Security.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k==" );
+                                                           Key in encryption state
+```
+
+- **Other Example for Decryption**
+```
+string Original_Data = "My name is MBARK";
+
+Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
+
+Decryption_Model dm = Security.Decrypt( em.Encrypted_Text , em.Key );
+
+```
+
+- Now we **Decrypt** data, and to get the decrypted data :
+```
+dm.Decrypted_Text
+```
+
+- If you want to get the **Key** used after the decryption operation :
+```
+dm.Key
+```
+
+# Additional info
+
+
+- **Encryption_Model** and **Decryption_Model** two classes used as data **models**
+
+
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
