@@ -26,7 +26,7 @@ using MB_Security;
 ## Encryption examples
 
 - To encrypt data use **Encrypt** static function inside **Security** class.
-- ### Security.Encrypt( Plain_Data , Key ) return a ### Encryyption_Model result.
+- ### **Security.Encrypt( Plain_Data , Key )** return a Encryyption_Model result.
 -
 - **Parameters** : 
 -
@@ -65,7 +65,7 @@ Encryption_Model em = Security.Encrypt( Original_Data );
 ## Decryption examples
 
 - To decrypt data use **Decrypt** static function inside **Security** class.
-- **Security.Decrypt( Encrypted_Data , Key )** return a **Decryption_Model** result.
+- ### Security.Decrypt( Encrypted_Data , Key ) return a **Decryption_Model** result.
 -
 - **Parameters** : 
 -
