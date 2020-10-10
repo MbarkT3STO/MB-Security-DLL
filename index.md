@@ -42,12 +42,12 @@ using MB_Security;
 string Original_Data = "My name is MBARK";
 Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
 ```
-- Now we **Encrypt** **Original_Data** value, and to get the encrypted data :
+Now we **Encrypt** **Original_Data** value, and to get the encrypted data :
 ```
 em.Encrypted_Text
 ```
 
-- If you want to get the **Key** used after the encryption operation (Key in encrypted state) :
+If you want to get the **Key** used after the encryption operation (Key in encrypted state) :
 ```
 em.Key
 ```
