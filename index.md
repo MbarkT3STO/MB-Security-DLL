@@ -67,9 +67,9 @@ Encryption_Model em = Security.Encrypt( Original_Data );
 
 - To decrypt data use **Decrypt** static function inside **Security** class.
 ### **Security.Decrypt( Encrypted_Data , Key , IV )** return a **Decryption_Model** result.
--
-- **Parameters** : 
--
+
+**Parameters** : 
+
  **Encrypted_Data** is the data that you want to decrypt (should be encrypted already).
  **Encrypted_Data** (At this time) Should be in string type.
  **Key** Is the private or RGB key for decryption operation.
@@ -83,7 +83,7 @@ Decryption_Model dm = Security.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k
                                                            Key in encryption state
 ```
 
--**Other Example for Decryption**
+- **Other Example for Decryption**
 ```
 string Original_Data = "My name is MBARK";
 
@@ -93,12 +93,12 @@ Decryption_Model dm = Security.Decrypt( em.Encrypted_Text , em.Key );
 
 ```
 
-- Now we **Decrypt** data, and to get the decrypted data :
+Now we **Decrypt** data, and to get the decrypted data :
 ```
 dm.Decrypted_Text
 ```
 
-- If you want to get the **Key** used after the decryption operation :
+If you want to get the **Key** used after the decryption operation :
 ```
 dm.Key
 ```
