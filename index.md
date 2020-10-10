@@ -2,8 +2,6 @@
 
 You can use the [editor on GitHub](https://github.com/MbarkT3STO/MB-Security-DLL/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 # 1st Step (Add reference)
 
 - **1 -** Open your .NET project using visual studio.
