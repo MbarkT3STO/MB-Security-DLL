@@ -60,14 +60,13 @@ string Original_Data = "My name is MBARK";
 Encryption_Model em = Security.Encrypt( Original_Data );
 
 ```
-
 - In the example above the **Key will Auo Generated**
 
 
-## Decryption examples
+# **Decryption examples**
 
 - To decrypt data use **Decrypt** static function inside **Security** class.
-- ### Security.Decrypt( Encrypted_Data , Key ) return a **Decryption_Model** result.
+- **Security.Decrypt( Encrypted_Data , Key )** return a **Decryption_Model** result.
 -
 - **Parameters** : 
 -
