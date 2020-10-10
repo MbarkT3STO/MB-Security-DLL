@@ -26,7 +26,7 @@ using MB_Security;
 ## Encryption examples
 
 - To encrypt data use **Encrypt** static function inside **Security** class.
-- **Security.Encrypt( Plain_Data , Key )** return a **Encryyption_Model** result.
+- ### Security.Encrypt( Plain_Data , Key ) return a ### Encryyption_Model result.
 -
 - **Parameters** : 
 -
