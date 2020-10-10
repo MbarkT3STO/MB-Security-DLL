@@ -4,13 +4,13 @@ You can use the [editor on GitHub](https://github.com/MbarkT3STO/MB-Security-DLL
 
 ## 1st Step (Add reference)
 
-**1.** Open your .NET project using visual studio.
-**2.** Go to Solution Explorer
-**3.** Right click on References
-**4.** Chose Add Reference
-**5.** Click on Browse
-**6.** Select all downloaded DLLs
-**7.** Click on OK
+1. Open your .NET project using visual studio.
+2. Go to Solution Explorer
+3. Right click on References
+4. Chose Add Reference
+5. Click on Browse
+6. Select all downloaded DLLs
+7. Click on OK
 
 ## 2nd Step (Using)
 
