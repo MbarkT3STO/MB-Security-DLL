@@ -84,13 +84,13 @@ Decryption_Model dm = Security.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k
 ```
 
 - **Other Example for Decryption**
+
 ```
 string Original_Data = "My name is MBARK";
 
 Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
 
 Decryption_Model dm = Security.Decrypt( em.Encrypted_Text , em.Key );
-
 ```
 
 Now we **Decrypt** data, and to get the decrypted data :
