@@ -23,8 +23,8 @@ using MB_Security;
 
 ## Encryption examples
 
-- To encrypt data use **Encrypt** static function inside **Security** class.
-- ### **Security.Encrypt( Plain_Data , Key , IV )** return a Encryyption_Model result.
+- To encrypt data use **Encrypt** static function inside **MBSecurity** class.
+- ### **MBSecurity.Encrypt( Plain_Data , Key , IV )** return a Encryyption_Model result.
 -
 - **Parameters** : 
 -
@@ -40,7 +40,7 @@ using MB_Security;
 
 ```
 string Original_Data = "My name is MBARK";
-Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
+Encryption_Model em = MBSecurity.Encrypt( Original_Data , "MyPrvKey" );
 ```
 Now we **Encrypt** **Original_Data** value, and to get the encrypted data :
 ```
@@ -57,7 +57,7 @@ em.Key
 ```
 string Original_Data = "My name is MBARK";
 
-Encryption_Model em = Security.Encrypt( Original_Data );
+Encryption_Model em = MBSecurity.Encrypt( Original_Data );
 
 ```
 - In the example above the **Key will Auo Generated**
@@ -65,8 +65,8 @@ Encryption_Model em = Security.Encrypt( Original_Data );
 
 ## Decryption examples
 
-- To decrypt data use **Decrypt** static function inside **Security** class.
-### **Security.Decrypt( Encrypted_Data , Key , IV )** return a **Decryption_Model** result.
+- To decrypt data use **Decrypt** static function inside **MBSecurity** class.
+### **MBSecurity.Decrypt( Encrypted_Data , Key , IV )** return a **Decryption_Model** result.
 
 ### **Parameters** : 
 
@@ -81,7 +81,7 @@ Encryption_Model em = Security.Encrypt( Original_Data );
 
 ```
 string Encrypted_Data = "mUVKmyTM/vTYNs35G1LkB7hrKzzno19h==";
-Decryption_Model dm = Security.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k==" );
+Decryption_Model dm = MBSecurity.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k==" );
                                                            Key in encryption state
 ```
 
@@ -90,9 +90,9 @@ Decryption_Model dm = Security.Decrypt( Encrypted_Data , "NB7hrK5G1LzvTYzno7hs3k
 ```
 string Original_Data = "My name is MBARK";
 
-Encryption_Model em = Security.Encrypt( Original_Data , "MyPrvKey" );
+Encryption_Model em = MBSecurity.Encrypt( Original_Data , "MyPrvKey" );
 
-Decryption_Model dm = Security.Decrypt( em.Encrypted_Text , em.Key );
+Decryption_Model dm = MBSecurity.Decrypt( em.Encrypted_Text , em.Key );
 ```
 
 Now we **Decrypt** data, and to get the decrypted data :
